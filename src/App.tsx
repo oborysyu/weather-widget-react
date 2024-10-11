@@ -24,7 +24,7 @@ function App() {
     setVisibleAlert(!!error);
   }, [error]
   )
-  const handleSizeChange = (e: any, size: string) => {
+  const handleSizeChange = (_e: any, size: string) => {
     updateSize(size);
   }
   return (
@@ -186,7 +186,6 @@ function App() {
                     },
                     grid: {
                       display: false,
-                      drawBorder: false,
                       drawTicks: false,
                     },
                     ticks: {
